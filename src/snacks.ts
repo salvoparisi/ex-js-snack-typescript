@@ -1,3 +1,4 @@
+//Snack 1
 let API: unknown
 
 API = false
@@ -12,4 +13,14 @@ if (typeof API === "string") {
   } else if (API === false) {
     console.log("No");
   }
+}
+
+//Snack 2
+
+type Dipendente = {
+  nome: string,
+  cognome: string,
+  annoNascita: number,
+  sesso: "m" | "f",
+  anniServizio: number[]
 }
