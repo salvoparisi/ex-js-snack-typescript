@@ -22,5 +22,20 @@ type Dipendente = {
   cognome: string,
   annoNascita: number,
   sesso: "m" | "f",
-  anniServizio: number[]
+  anniServizio: number[],
+  ruolo: Developer | ProjectManager
+}
+
+//Snack 3
+
+type Developer = {
+  livelloEsperienza: "Junior" | "Mid" | "Senior"
+  linguaggi?: string[]
+  certificazioni: string[] | []
+}
+
+type ProjectManager = {
+  teamSize: number | null
+  budgetGestito?: number
+  stakeholderPrincipali: string[] | []
 }
